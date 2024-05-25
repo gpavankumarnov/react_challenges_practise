@@ -1,0 +1,125 @@
+receiving props as tasks as below.
+You have board names as in [] array.
+
+
+Don't mutate the data directly. take copy of data.
+
+create stageNames array.
+use forloop to have sub-arrays inside it of length = boardnames.
+    let stageNames = []
+
+    for(let i=0; i<stages.length; i++){
+        stageNames.push([])
+    }
+
+
+use for of loop to iterate an array of objects - tasks.
+              for(let task of tasks) {
+                const stageID=task.stage;      //0,1,2,3
+                stagesNames[stageID].push(task)
+              }
+
+//output
+stageNames = [ 
+
+
+[
+  {name: task0, stage:0}
+  {name: task0, stage:0}
+  {name: task0, stage:0}
+
+]
+[
+  {name: task0, stage:1}
+  {name: task0, stage:1}
+  {name: task0, stage:1}
+
+]
+[
+  {name: task0, stage:2}
+  {name: task0, stage:2}
+  {name: task0, stage:2}
+
+]
+[
+  {name: task0, stage:3}
+  {name: task0, stage:3}
+  {name: task0, stage:3}
+
+]
+
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  this.state = {
+      tasks: [
+        { name: 'task 0', stage: 0 },
+        { name: 'task 1', stage: 0 },
+        { name: 'task 2', stage: 0 },
+        { name: 'task 3', stage: 0 },
+        { name: 'task 4', stage: 1 },
+        { name: 'task 5', stage: 1 },
+        { name: 'task 6', stage: 1 },
+        { name: 'task 7', stage: 2 },
+        { name: 'task 8', stage: 2 },
+        { name: 'task 9', stage: 3 },
+      ]
+    };
+    this.stagesNames = ['Backlog', 'To Do', 'Ongoing', 'Done'];
+
+
+    const {tasks} = this.state;
+
+    let stagesTasks = []
+
+    for(let i=0; i<this.stagesNames.length; i++){
+        stagesTasks.push([])
+    }
+
+    for(let task of tasks){
+        const stageID = task.stage;
+        stagesTasks[stageID].push(task)
+    }
+
+
+
+Tasks to be done:
+
+forward
+  - disable when at last
+  - clicking should move to next stage.
+
+
+backward 
+ - disable when at first
+ - clicking should move to previous stage.
+   
+
+
+How can be done? steps:
+
+when user clicks the backward button.
+getting the respective task object.  task has name, stage properties.
+mutating the task stage value.
+
+--Now need to insert the mutated task into the tasks state.
+Do not replace and remove the task object in tasks state directly.
+take copy of state and find the task by index and re-assign the mutated object to it.
+Finally set the copied state as newState in place of tasks.

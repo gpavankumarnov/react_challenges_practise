@@ -1,0 +1,4 @@
+Place Navbar component above of Routes.
+Navbar component design -> Use NavLink to render the links with active of one link.
+attributes: to -> specify path as specified in route path. 
+            activeClassName for active link.

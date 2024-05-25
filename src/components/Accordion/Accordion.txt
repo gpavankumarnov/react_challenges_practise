@@ -1,0 +1,5 @@
+Accordion design
+
+UI -> To render number of accordions based on the props length you received.
+State -> create a state to track the accordion open/close on basis if index === currentstate
+
