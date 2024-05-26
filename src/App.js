@@ -26,13 +26,11 @@ import RecieveAPIComp from "./components/FetchAPI/RecieveAPIComp";
 
 function App() {
   return (
-  //   <Provider store={store}>
-  //     <Suspense fallback={<p>Loading...</p>}>
+ 
       <div className="container">
 <RecieveAPIComp/>
    </div>
-  //     </Suspense>
-  //   </Provider>
+ 
 
 
   );
