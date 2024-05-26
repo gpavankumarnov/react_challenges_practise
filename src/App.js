@@ -10,7 +10,8 @@ import Accordion from "./components/StateUplifting/Accordion";
 import AppComp from "./components/HigherOrderComponents/AppComp";
 import UserListData from "./components/HocExample/UserListData";
 import TodoList from "./components/HocExample/TodoList";
-import react from 'react'
+import react from 'styled-components'
+import styled from "styled-components";
 //space commented
 
 // import SearchUsers from "./components/HocExample/UserListData";
