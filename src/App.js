@@ -4,13 +4,13 @@ import React, { lazy } from "react";
 import RecieveAPIComp from "./components/FetchAPI/RecieveAPIComp";
 
 
-// import StopWatch from "./components/React_Challenges_Website/StopwatchTimer/StopWatch";
-// import ProgressBar from "./components/React_Challenges_Website/ProgressBar/ProgressBar";
-// import Accordion from "./components/StateUplifting/Accordion";
-// import AppComp from "./components/HigherOrderComponents/AppComp";
-// import UserListData from "./components/HocExample/UserListData";
-// import TodoList from "./components/HocExample/TodoList";
-import React from 'react';
+import StopWatch from "./components/React_Challenges_Website/StopwatchTimer/StopWatch";
+import ProgressBar from "./components/React_Challenges_Website/ProgressBar/ProgressBar";
+import Accordion from "./components/StateUplifting/Accordion";
+import AppComp from "./components/HigherOrderComponents/AppComp";
+import UserListData from "./components/HocExample/UserListData";
+import TodoList from "./components/HocExample/TodoList";
+//space commented
 
 // import SearchUsers from "./components/HocExample/UserListData";
 // import { KanbanBaord } from "./components/KanbanBoard/KanbanBaord";
