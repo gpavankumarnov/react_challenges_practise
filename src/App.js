@@ -2,9 +2,6 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { lazy } from "react";
 import RecieveAPIComp from "./components/FetchAPI/RecieveAPIComp";
-// import { store } from "./pages/ShoppingApp/Redux/store";
-// import { Provider } from "react-redux";
-// import { Suspense } from "react";
 
 
 // import StopWatch from "./components/React_Challenges_Website/StopwatchTimer/StopWatch";
