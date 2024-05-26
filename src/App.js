@@ -11,7 +11,6 @@ import AppComp from "./components/HigherOrderComponents/AppComp";
 import UserListData from "./components/HocExample/UserListData";
 import TodoList from "./components/HocExample/TodoList";
 import react from 'react'
-import styled from "styled-components";
 //space commented
 
 // import SearchUsers from "./components/HocExample/UserListData";
